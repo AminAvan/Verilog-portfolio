@@ -8,6 +8,12 @@ module tb_full_adder;
     // Instantiate the full-adder module
     full_adder dut (a, b, c_in, sum, carry_out);
 
+    // Dumpfile & dumpvars for waveform generation
+    initial begin
+        $dumpfile("fullAdderTB.vcd"); // Specify dump filename
+        $dumpvars(0, tb_full_adder); // Dump all signals in the testbench
+    end
+
 
     // Apply test stimulus
     initial begin
