@@ -1,0 +1,12 @@
+# Compiled simulation files
+*.vvp
+
+# Waveform dump files
+*.vcd
+
+# Logs
+*.log
+
+# Temporary output
+*.out
+*.tmp
