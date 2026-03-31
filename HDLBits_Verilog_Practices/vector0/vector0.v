@@ -1,3 +1,4 @@
+`default_nettype none
 module top_module(
     input wire [2:0] vec,
     output wire [2:0] outv,
