@@ -15,7 +15,7 @@ module top_module(
 
     genvar i;
     generate
-        for (i = 1; i<$bits(a); i = i + 1) begin : gen_FA
+        for (i = 1; i<100; i = i + 1) begin : gen_FA
             full_adder inst (
                 .a(a[i]),
                 .b(b[i]),
