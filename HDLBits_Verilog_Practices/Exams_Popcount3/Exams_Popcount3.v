@@ -6,7 +6,7 @@ module top_module(
     reg [1:0] count;
 
     always @(*) begin
-        count = 2'd0;
+        count = 2'd0; // 'count' needed to be reset/initialize to 'zero'
         for (integer i = 0; i <$bits(in); i = i + 1)
             if (in[i] == 1'b1) begin
                 count = count + 2'd1;
